@@ -31,21 +31,11 @@ pdflatex --version
 pdflatex --version
 ```
 
-### On GitHub (GitHub Actions)
-
-Use the `texlive` setup in your workflow:
-
-```yaml
-- uses: xu-cheng/latex-action@v2
-  with:
-    root_file: my_document.tex
-```
-
 ---
 
 ## 2️⃣ Compiling a LaTeX Document
 
-Create `my_document.tex`:
+Create `main.tex`:
 
 ```latex
 \documentclass{article}
@@ -56,11 +46,11 @@ Hello, this is a LaTeX document!
 
 Compile:
 
-* Ubuntu: `pdflatex my_document.tex`
-* Windows: `pdflatex my_document.tex`
+* Ubuntu: `pdflatex main.tex`
+* Windows: `pdflatex main.tex`
 * GitHub Actions: automatically via workflow
 
-Output: `my_document.pdf`
+Output: `main.pdf`
 
 ---
 
@@ -76,13 +66,6 @@ sudo apt install texlive-fonts-extra
 
 1. Open MiKTeX Console.
 2. Search for `raleway` and install.
-
-### GitHub Actions
-
-```yaml
-- name: Install TeX Live fonts
-  run: sudo apt-get install texlive-fonts-extra
-```
 
 Use Raleway in your document:
 
@@ -100,7 +83,7 @@ Compile as usual.
 
 ---
 
-## 4️⃣ Quick Guide for Git Clone (GitHub Repository)
+## 4️⃣ Quick Guide for git clone (GitHub Repository)
 
 1. Clone a repository:
 
@@ -114,7 +97,7 @@ cd repo
 3. Build the LaTeX document locally:
 
 ```bash
-pdflatex my_document.tex
+pdflatex main.tex
 ```
 
 4. Push changes back to the repository:
