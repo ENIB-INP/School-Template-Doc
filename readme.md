@@ -1,4 +1,4 @@
-# README - Using LaTeX, Raleway, and GitHub Pit Clone on Ubuntu, Windows, and GitHub
+# README - Using LaTeX, Raleway and git commands on Ubuntu, Windows, and GitHub
 
 ## 1️⃣ Installing LaTeX
 
