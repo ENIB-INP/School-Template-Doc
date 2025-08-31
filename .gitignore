@@ -1,0 +1,23 @@
+# .gitignore for LaTeX compiled files
+
+# Auxiliary files
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Other temporary files
+*.backup
+*~
+*.tmp
+*.swp
